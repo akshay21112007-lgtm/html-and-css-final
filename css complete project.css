@@ -1,0 +1,79 @@
+    .minibox{
+    background-color: beige;
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .first{
+        display: flex;
+    gap: 20px;
+    }   
+
+
+    .transition{
+        height: 400px;
+        color: white;
+        background: linear-gradient(to right,rgb(64, 5, 173),rgb(17, 1, 36));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center ;
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .small-boxes{
+        display: flex;
+
+        flex-wrap: wrap;
+        gap: 20px;
+        
+    }
+    .b{
+
+        flex: 1 1 250px;
+    max-width: 160px;
+        padding: 20px;
+        margin-bottom: 10px;
+        border: 2px solid black ;
+        border-radius: 8px;
+    }
+    .box h4::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: blue;
+        margin-top: 3px;
+    }
+    .button:hover{
+        background-color: rgb(59, 65, 5);
+        color: rgb(241, 6, 6);
+        transition: 0.8s;
+    }
+    .footer{
+        display: flex;
+        justify-content: end;
+      text-decoration: solid;
+    }
+    .transition{
+    animation: blink 2s ease-in-out;
+   
+}
+    @keyframes blink {
+        from{
+           opacity: 0.4;
+        }
+        to{
+         opacity: 1;
+        }
+        
+    }
